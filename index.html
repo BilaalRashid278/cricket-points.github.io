@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Points</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            background-image: url(./images/background-image.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .main-head{
+            text-align: center;
+            font-size: 5rem;
+            margin: 10px 0px;
+            padding: 0;
+            text-transform: uppercase;
+            color: white;
+        }
+        .sub-width{
+            width: 85%;
+            margin: auto;
+        }
+        .sub-head{
+            background-color: white;
+            text-align: center;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            word-spacing: 0.9rem;
+            box-sizing: border-box;
+            padding-top: 8px;
+            height: 40px;
+        }
+        td{
+            text-align: center;
+            font-weight: bold;
+        }
+        th{
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.861);
+        }
+        #table{
+            color: white;
+            border: 2px solid white;
+            margin-top: 10px;
+            border-spacing: 0;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+        /* th{
+            width: 11.1%;
+        } */
+        td img{
+            width: 40px;
+        }
+        #penalty-overs{
+            width: 15%;
+        }
+        .data{
+            width: 8%;
+            padding: 5px;
+        }
+        .flags-head{
+            width: 5%;
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+        .bg-penalty{
+            background-color: rgb(60, 90, 237);
+        }
+        .penalty-detail{
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        @media screen and (max-width: 800px) {
+            html{
+                font-size: 8px;
+            }
+            td img{
+                width: 35px;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            html{
+                font-size: 7px;
+                height: 100vh;
+            }
+            td img{
+                width: 30px;
+            }
+            .sub-head{
+            font-size: 2.5rem;
+            padding-top: 13px;
+        }
+        }
+        @media screen and (max-width: 768px) {
+            html{
+                font-size: 6px;
+            }
+            td img{
+                width: 27px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-head">Points Table</h1>
+    <h2 class="sub-head sub-width">icc cricket world cup super league</h2>
+    <table id="table" class="sub-width">
+        <colgroup>
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-blue" />
+            <col class="bg-penalty" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="flags-head"></th>
+                <th class="data">team</th>
+                <th class="data">Mat</th>
+                <th class="data">won</th>
+                <th class="data">lost</th>
+                <th class="data">tied</th>
+                <th class="data">nr</th>
+                <th class="data">points</th>
+                <th class="data">nrr</th>
+                <th id="penalty-overs">penalty overs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./images/icons8-australia-48.png" alt=""></td>
+                <td>aus</td>
+                <td>6</td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+                <td>9</td>
+                <td>80</td>
+                <td>0.357</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/Pakistan.png" alt=""></td>
+                <td>pak</td>
+                <td>6</td>
+                <td>5</td>
+                <td>1</td>
+                <td>0</td>
+                <td>9</td>
+                <td>90</td>
+                <td>0.494</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/icons8-england-48.png" alt=""></td>
+                <td>eng</td>
+                <td>6</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>9</td>
+                <td>60</td>
+                <td>0.357</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/icons8-sri-lanka-48.png" alt=""></td>
+                <td>sl</td>
+                <td>6</td>
+                <td>2</td>
+                <td>4</td>
+                <td>0</td>
+                <td>9</td>
+                <td>50</td>
+                <td>0.357</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/icons8-india-flag-48.png" alt=""></td>
+                <td>ind</td>
+                <td>6</td>
+                <td>1</td>
+                <td>5</td>
+                <td>0</td>
+                <td>9</td>
+                <td>30</td>
+                <td>0.357</td>
+                <td class="penalty-detail">1</td>
+            </tr>
+            <tr>
+                <td><img src="./images/icons8-australia-48.png" alt=""></td>
+                <td>aus</td>
+                <td>6</td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+                <td>9</td>
+                <td>80</td>
+                <td>0.357</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/Pakistan.png" alt=""></td>
+                <td>pak</td>
+                <td>6</td>
+                <td>5</td>
+                <td>1</td>
+                <td>0</td>
+                <td>9</td>
+                <td>90</td>
+                <td>0.494</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/icons8-england-48.png" alt=""></td>
+                <td>eng</td>
+                <td>6</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>9</td>
+                <td>60</td>
+                <td>0.357</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/icons8-sri-lanka-48.png" alt=""></td>
+                <td>sl</td>
+                <td>6</td>
+                <td>2</td>
+                <td>4</td>
+                <td>0</td>
+                <td>9</td>
+                <td>50</td>
+                <td>0.357</td>
+                <td class="penalty-detail">-</td>
+            </tr>
+            <tr>
+                <td><img src="./images/icons8-india-flag-48.png" alt=""></td>
+                <td>ind</td>
+                <td>6</td>
+                <td>1</td>
+                <td>5</td>
+                <td>0</td>
+                <td>9</td>
+                <td>30</td>
+                <td>0.357</td>
+                <td class="penalty-detail">1</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

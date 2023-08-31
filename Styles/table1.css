@@ -1,0 +1,42 @@
+table{
+    font-size: 1.4rem;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    border-spacing: 0;
+}
+thead{
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+th{
+    text-align: start;
+}
+.end-head{
+    text-align: end;
+}
+.head-padding{
+    padding: 0px 20px;
+}
+td{
+    padding: 10px 20px;
+    text-align: start;
+    /* border: 2px solid blue; */
+}
+.end-txt{
+    text-align: end;
+}
+.center-txt{
+    text-align: center;
+}
+.bg-gray{
+    background-color: rgb(233, 233, 233);
+}
+tr{
+    padding: 10px 0px;
+}
+tr:hover{
+    background-color: black;
+    color: white;
+}
